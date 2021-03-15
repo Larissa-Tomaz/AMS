@@ -20,7 +20,7 @@
     <element xsi:type="archimate:BusinessInterface" name="Business Interface" id="id-ccc6ea6d58b444e6892732fa9c301977"/>
     <element xsi:type="archimate:BusinessProcess" name="Aprovação do Relatório pelo TDep" id="id-ede381fe15884a9e87279603717e4306"/>
     <element xsi:type="archimate:BusinessProcess" name="Rejeição do Relatório" id="id-e34f4aeefc2a43498b8d93f44f4be13e"/>
-    <element xsi:type="archimate:BusinessProcess" name="Formulação de Proposta" id="id-01f7381f8556495ab85d4ae732f0f0a2"/>
+    <element xsi:type="archimate:BusinessProcess" name="Formulação de Proposta de Contrato" id="id-01f7381f8556495ab85d4ae732f0f0a2"/>
     <element xsi:type="archimate:BusinessActor" name="CDep" id="id-04f6d45a3f4147398344accb823c293a"/>
     <element xsi:type="archimate:BusinessActor" name="LDep" id="id-99132ae1828541efa0061c7a2aa259ed"/>
     <element xsi:type="archimate:BusinessActor" name="TDep" id="id-4fcbda96d90443e1ae52c961092b783c"/>
@@ -43,12 +43,19 @@
     <element xsi:type="archimate:BusinessEvent" name="48h Sem resposta" id="id-050cd0524d5b405eaf675a85c456977e"/>
     <element xsi:type="archimate:BusinessEvent" name="72h Sem resposta" id="id-d9bbfb1c17f34f0d87f3fd64305d0a6e"/>
     <element xsi:type="archimate:BusinessProcess" name="Aceitação de proposta" id="id-14657fd6c3b84b3f8e82ad4796a045f1"/>
+    <element xsi:type="archimate:BusinessRole" name="suporte às operações contradas" id="id-10559912afdd418a879863dc5b7e0ac6"/>
+    <element xsi:type="archimate:BusinessProcess" name="Assinar Contrato" id="id-89dfdd1702994d3897084782b0cf6b4c"/>
   </folder>
   <folder name="Application" id="id-5be8a0706607472591696d2e7c2755d5" type="application">
     <element xsi:type="archimate:ApplicationService" name="SPXCRM" id="id-ce8754f871894768829507a83218ea50"/>
     <element xsi:type="archimate:ApplicationService" name="SATIS" id="id-04975a7516b6448baf7c5a80f85ce104"/>
     <element xsi:type="archimate:ApplicationService" name="SPXMT" id="id-d767185c999c45ff92383ff1a1c34ca6"/>
     <element xsi:type="archimate:ApplicationEvent" name="Application Event" id="id-3df0ffd814114ddead55c5aa22830227"/>
+    <element xsi:type="archimate:ApplicationService" name="Suporte às operações contradas" id="id-9c120eb03dce4151b930b2e63d7f88b8"/>
+    <element xsi:type="archimate:ApplicationComponent" name="SPXCRM" id="id-26cb6b4747c24e8da09e951511a434b8"/>
+    <element xsi:type="archimate:ApplicationComponent" name="SATIS" id="id-099205e0de124d659db7225c24e2e7ca"/>
+    <element xsi:type="archimate:ApplicationComponent" name="SPXMT" id="id-91f0c90eae984d83a5dc49c02c2a7475"/>
+    <element xsi:type="archimate:ApplicationService" name="Análise de Dados" id="id-938a715a019b4f3b919f780e5a3c4c83"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-fdcd12a5d78646009cfa581235ca7de7" type="technology">
     <element xsi:type="archimate:CommunicationNetwork" name="Communication Network" id="id-713067f0f4f24490be8174881b036225"/>
@@ -59,6 +66,7 @@
     <element xsi:type="archimate:TechnologyInterface" name="Linux" id="id-2e311fe3b5bc466d9e56ecac97789638"/>
     <element xsi:type="archimate:SystemSoftware" name="OS Linux" id="id-56865f23f8a040a3a0101620d591cec7"/>
     <element xsi:type="archimate:DistributionNetwork" name="Distribution Network" id="id-e1792cc1e4534bd0b9cb00c9503919aa"/>
+    <element xsi:type="archimate:CommunicationNetwork" name="Rede Local" id="id-00fb6840056b4c97bda97016b06565d0"/>
   </folder>
   <folder name="Motivation" id="id-221c47b7960045b3a06c4ef797c806fd" type="motivation">
     <element xsi:type="archimate:Stakeholder" name="Stakeholder" id="id-182f8eeeb7384a4c9bf465a0430cd982"/>
@@ -96,7 +104,7 @@
     <element xsi:type="archimate:AggregationRelationship" id="id-650a398766684a03b74bf4caeda04ff0" source="id-9de7b83b5f5e4a8aa475925ae9300ea4" target="id-04975a7516b6448baf7c5a80f85ce104"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-4e19fd4b70944c84b5f87c91c8840569" source="id-9de7b83b5f5e4a8aa475925ae9300ea4" target="id-ce8754f871894768829507a83218ea50"/>
     <element xsi:type="archimate:ServingRelationship" id="id-11a5a2670c2b4197aea7dc44fd014808" source="id-ec5c6bdb58894dcfa4a450781b31ffde" target="id-4fabe338f99e4a9885b7b8ff59e943c3"/>
-    <element xsi:type="archimate:ServingRelationship" id="id-0eb75de71c3848f7a25a267ced358dd7" source="id-ec5c6bdb58894dcfa4a450781b31ffde" target="id-ce8754f871894768829507a83218ea50"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-0eb75de71c3848f7a25a267ced358dd7" source="id-ec5c6bdb58894dcfa4a450781b31ffde" target="id-26cb6b4747c24e8da09e951511a434b8"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-88d6be832c8943e39e3ade29781c8a8a" source="id-94a89a46182c465b85c2f4df7e1783f7" target="id-302c236af5e54edabf2a38d167664529"/>
     <element xsi:type="archimate:TriggeringRelationship" id="id-fdc7bd19a60444f59e07f2de6ebd7788" source="id-d2cfff53d2cb411fb7dfbce71fa568dc" target="id-64937c571ecb448d9614361735650df4"/>
     <element xsi:type="archimate:TriggeringRelationship" id="id-a443ccf63eca427ab8451f5c266bc9b6" source="id-64937c571ecb448d9614361735650df4" target="id-3253254688b8411ba4a3d80bbbc6e2f7"/>
@@ -129,6 +137,14 @@
     <element xsi:type="archimate:TriggeringRelationship" id="id-c034bf15e0374a428554603dc9db0fa4" source="id-d9bbfb1c17f34f0d87f3fd64305d0a6e" target="id-7289f548af5b49c1ba366d78a7e3fb53"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-42efd668bc244f6abd6a1b6d9350f6b5" source="id-99132ae1828541efa0061c7a2aa259ed" target="id-01f7381f8556495ab85d4ae732f0f0a2"/>
     <element xsi:type="archimate:FlowRelationship" id="id-7a0ef197ca4746e0921f34e71c8ebea3" source="id-01f7381f8556495ab85d4ae732f0f0a2" target="id-94a89a46182c465b85c2f4df7e1783f7"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-baf8b07c4d0e4717b8432a58312ebf6d" source="id-26cb6b4747c24e8da09e951511a434b8" target="id-01f7381f8556495ab85d4ae732f0f0a2"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-f7fa8ac6d95d4b9a81e95ed5072ac7dc" source="id-099205e0de124d659db7225c24e2e7ca" target="id-9c120eb03dce4151b930b2e63d7f88b8"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-c188581723294a2eaa234e4aca505996" source="id-56865f23f8a040a3a0101620d591cec7" target="id-099205e0de124d659db7225c24e2e7ca"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-a1331c0e71ca4264bb1d0cf02480db48" source="id-91f0c90eae984d83a5dc49c02c2a7475" target="id-938a715a019b4f3b919f780e5a3c4c83"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-74a47a050385484d8bf991fd085263d2" source="id-099205e0de124d659db7225c24e2e7ca" target="id-9c120eb03dce4151b930b2e63d7f88b8"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-3b771ac84cb84d8da8ad933dfe536567" source="id-01f7381f8556495ab85d4ae732f0f0a2" target="id-eceeae9180574b69880fb7a15cd236b0"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-d13de3139a1f420da3ed6a86ee18aeab" source="id-01f7381f8556495ab85d4ae732f0f0a2" target="id-14657fd6c3b84b3f8e82ad4796a045f1"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-dd3c272242814bad9c6363013476e3b0" source="id-14657fd6c3b84b3f8e82ad4796a045f1" target="id-89dfdd1702994d3897084782b0cf6b4c"/>
   </folder>
   <folder name="Views" id="id-0157287966ae44b8a3c2f2234dc6dc24" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-8cf6101a9763400fb091ba2ecd0fe65a"/>
@@ -234,26 +250,34 @@ Primeiro tinha feito que o java virtual machine servia o SPXCRM.&#xD;
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Product_new´" id="id-9ced041d92804187a1f8cdea13f1ebe4">
       <child xsi:type="archimate:DiagramObject" id="id-9faba912ce924a5b8542cb06dac3a7ff" archimateElement="id-ec5c6bdb58894dcfa4a450781b31ffde">
-        <bounds x="1104" y="1020" width="120" height="55"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-66fe62dcb61f4e8eab63ac3168f28289" source="id-9faba912ce924a5b8542cb06dac3a7ff" target="id-581a629b9acb44a3b6d466889ece943b" archimateRelationship="id-11a5a2670c2b4197aea7dc44fd014808"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-40af618401d14a8e94f92db7266b3cd2" source="id-9faba912ce924a5b8542cb06dac3a7ff" target="id-2e8f91633eee41b5b7710316583e400f" archimateRelationship="id-0eb75de71c3848f7a25a267ced358dd7"/>
+        <bounds x="1116" y="1074" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-40af618401d14a8e94f92db7266b3cd2" source="id-9faba912ce924a5b8542cb06dac3a7ff" target="id-bdf61ca091d24984a1615413c096948e" archimateRelationship="id-0eb75de71c3848f7a25a267ced358dd7"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-8f6493d857fb4d8ebfdefb7f8a1d3fb4" archimateElement="id-56865f23f8a040a3a0101620d591cec7">
-        <bounds x="1334" y="1032" width="120" height="55"/>
+        <bounds x="1356" y="1068" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-1afae1dfb19148a58f5715cb261925ef" source="id-8f6493d857fb4d8ebfdefb7f8a1d3fb4" target="id-3b390e0cab604219a284bdd002ec9c66" archimateRelationship="id-c188581723294a2eaa234e4aca505996"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-2e7cfdf703c84bc4a393475a72352554" archimateElement="id-9de7b83b5f5e4a8aa475925ae9300ea4">
-        <bounds x="1092" y="876" width="529" height="151"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-7c9fc9418e2a4115a4ace94356678d10" source="id-2e7cfdf703c84bc4a393475a72352554" target="id-5b85ff4d5ba747d093bd1fca983e36a4" archimateRelationship="id-bd2111837e784aa39159c17158746393"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-ed140b822328452fb665d8fd253e181c" source="id-2e7cfdf703c84bc4a393475a72352554" target="id-2e8f91633eee41b5b7710316583e400f" archimateRelationship="id-4e19fd4b70944c84b5f87c91c8840569"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-6cda501d036845c28a3c3573a7abf6c3" source="id-2e7cfdf703c84bc4a393475a72352554" target="id-ff7f1ed3b5a64fa48cbddda582ffa1a7" archimateRelationship="id-650a398766684a03b74bf4caeda04ff0"/>
-        <child xsi:type="archimate:DiagramObject" id="id-5b85ff4d5ba747d093bd1fca983e36a4" targetConnections="id-7c9fc9418e2a4115a4ace94356678d10" archimateElement="id-d767185c999c45ff92383ff1a1c34ca6">
-          <bounds x="301" y="48" width="120" height="55"/>
+        <bounds x="1116" y="792" width="529" height="217"/>
+        <child xsi:type="archimate:DiagramObject" id="id-bdf61ca091d24984a1615413c096948e" targetConnections="id-40af618401d14a8e94f92db7266b3cd2" archimateElement="id-26cb6b4747c24e8da09e951511a434b8">
+          <bounds x="36" y="48" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2061709fc89e4bca84a649b2869189d9" source="id-bdf61ca091d24984a1615413c096948e" target="id-2e568f18a2f14d83bbff1e344f1c64db" archimateRelationship="id-baf8b07c4d0e4717b8432a58312ebf6d">
+            <bendpoint startX="-12" startY="-159" endX="-657" endY="367"/>
+            <bendpoint startX="636" startY="-219" endX="-33" endY="391"/>
+          </sourceConnection>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-ff7f1ed3b5a64fa48cbddda582ffa1a7" targetConnections="id-6cda501d036845c28a3c3573a7abf6c3" archimateElement="id-04975a7516b6448baf7c5a80f85ce104">
-          <bounds x="169" y="48" width="120" height="55"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-2e8f91633eee41b5b7710316583e400f" targetConnections="id-ed140b822328452fb665d8fd253e181c id-40af618401d14a8e94f92db7266b3cd2" archimateElement="id-ce8754f871894768829507a83218ea50">
-          <bounds x="24" y="48" width="120" height="55"/>
+        <child xsi:type="archimate:DiagramObject" id="id-b7883fbb4d73444b978a6c1434b428aa" archimateElement="id-00fb6840056b4c97bda97016b06565d0">
+          <bounds x="228" y="48" width="289" height="145"/>
+          <child xsi:type="archimate:DiagramObject" id="id-dd614e52de0d4e54917ded43a39ad248" archimateElement="id-91f0c90eae984d83a5dc49c02c2a7475">
+            <bounds x="144" y="48" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-c2e53e397cdf4795a84463bddca26bc7" source="id-dd614e52de0d4e54917ded43a39ad248" target="id-70dfc4ae9867442aa5b8a54cf245ac23" archimateRelationship="id-a1331c0e71ca4264bb1d0cf02480db48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-3b390e0cab604219a284bdd002ec9c66" targetConnections="id-1afae1dfb19148a58f5715cb261925ef" archimateElement="id-099205e0de124d659db7225c24e2e7ca">
+            <bounds x="12" y="48" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-3653ddbedd9b436ab8cba674f0e6ccbf" source="id-3b390e0cab604219a284bdd002ec9c66" target="id-55104af5a9b641538c324ad04669ebea" archimateRelationship="id-74a47a050385484d8bf991fd085263d2">
+              <bendpoint startX="-12" startY="-75" endX="-12" endY="45"/>
+            </sourceConnection>
+          </child>
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-961199d7c2cd4bd7bf908b74805baa53" targetConnections="id-386ff56a79914d80a5d2d0579a120446" archimateElement="id-302c236af5e54edabf2a38d167664529">
@@ -261,7 +285,7 @@ Primeiro tinha feito que o java virtual machine servia o SPXCRM.&#xD;
         <sourceConnection xsi:type="archimate:Connection" id="id-44cb177b950145a988e0ae1b9acabf75" source="id-961199d7c2cd4bd7bf908b74805baa53" target="id-1590cfbae733436a8b025edcb137f2f8" archimateRelationship="id-128b6e814f604c198e0da2bab41a2a99"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-96cf4140c24e4606884d2e7f5bc9831d" archimateElement="id-a094871810974f58b9ae58c19ae13e32">
-        <bounds x="705" y="96" width="1312" height="373"/>
+        <bounds x="705" y="96" width="1396" height="373"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-8e69609aaf4d43d2bdfba2ed1c0515c7" source="id-96cf4140c24e4606884d2e7f5bc9831d" target="id-bbc96861db144d03928ebe043368946a" archimateRelationship="id-1bdce8e96b29411685a7cce2a4033371"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-76c2812715da4991a15a8a591f661729" source="id-96cf4140c24e4606884d2e7f5bc9831d" target="id-2e568f18a2f14d83bbff1e344f1c64db" archimateRelationship="id-da24245080ba4dc9b9d201ad1c97d5de"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-ec759360b97c44d0ab8b48dd7b221d9a" source="id-96cf4140c24e4606884d2e7f5bc9831d" target="id-6699f96b1abe4b15b3d636653103694a" archimateRelationship="id-5b396dfac5df4c58b9b7b5c7d26c3f61"/>
@@ -289,12 +313,14 @@ Primeiro tinha feito que o java virtual machine servia o SPXCRM.&#xD;
           <bounds x="816" y="288" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-f7935d7040974df8a0f3ee9d20444f69" source="id-bbc96861db144d03928ebe043368946a" target="id-5fadec86436e4fa4945b4199e56dd13c" archimateRelationship="id-b8f2eb6c456248ab9be6e471127a8f42"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-2e568f18a2f14d83bbff1e344f1c64db" targetConnections="id-76c2812715da4991a15a8a591f661729 id-3373b595d9594d46aefa7a40d2eadaa7 id-f8b88060e0bc481fa9714c0c90884eee id-c2d6761aba6d48da8dec1f428dd9d79c" archimateElement="id-01f7381f8556495ab85d4ae732f0f0a2">
+        <child xsi:type="archimate:DiagramObject" id="id-2e568f18a2f14d83bbff1e344f1c64db" targetConnections="id-76c2812715da4991a15a8a591f661729 id-3373b595d9594d46aefa7a40d2eadaa7 id-f8b88060e0bc481fa9714c0c90884eee id-c2d6761aba6d48da8dec1f428dd9d79c id-2061709fc89e4bca84a649b2869189d9" archimateElement="id-01f7381f8556495ab85d4ae732f0f0a2">
           <bounds x="1080" y="218" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-7da8abfc9d9c428c8516c13720cb8ee1" source="id-2e568f18a2f14d83bbff1e344f1c64db" target="id-65fc552be4ff4528a19640e2bd9444b8" archimateRelationship="id-7a0ef197ca4746e0921f34e71c8ebea3">
             <bendpoint startX="16" startY="-364" endX="1292" endY="-134"/>
             <bendpoint startX="-1256" startY="-364" endX="20" endY="-134"/>
           </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="id-abdd134bb76d4800b1427992288dc07b" source="id-2e568f18a2f14d83bbff1e344f1c64db" target="id-e7475a05ebb24a8d8aab5cbf0839d60a" archimateRelationship="id-3b771ac84cb84d8da8ad933dfe536567"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0a3eb1b898f0457081040048a77a95cb" source="id-2e568f18a2f14d83bbff1e344f1c64db" target="id-3ee6d0fdc2d54a219be18936eb43b94b" archimateRelationship="id-d13de3139a1f420da3ed6a86ee18aeab"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-bfdf8cb5af354838b02f4c6e4e077905" targetConnections="id-b18aa4f861034894a5173453301724a2 id-ba797d4d18cb40179a159399ef60d5d2" archimateElement="id-64937c571ecb448d9614361735650df4">
           <bounds x="512" y="132" width="120" height="55"/>
@@ -345,8 +371,8 @@ Primeiro tinha feito que o java virtual machine servia o SPXCRM.&#xD;
         <child xsi:type="archimate:DiagramObject" id="id-ad5177eea948478d867a8803765b2a98" targetConnections="id-8aa212491d4d4226bd01f31ce1be909b" archimateElement="id-050cd0524d5b405eaf675a85c456977e">
           <bounds x="972" y="124" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-b5389a2bab464e58b47cfba0e7773ff5" source="id-ad5177eea948478d867a8803765b2a98" target="id-e03bf575cf554a4d85c3482d199ba63d" archimateRelationship="id-36949ca1dcec4fc6a187f7bc397a2629">
-            <bendpoint startX="243" startY="-7" endX="1187" endY="-339"/>
-            <bendpoint startX="243" startY="377" endX="1188" endY="9"/>
+            <bendpoint startX="280" startY="-6" endX="1224" endY="-374"/>
+            <bendpoint startX="280" startY="378" endX="1224" endY="10"/>
             <bendpoint startX="-321" startY="377" endX="624" endY="9"/>
           </sourceConnection>
         </child>
@@ -378,16 +404,7 @@ Primeiro tinha feito que o java virtual machine servia o SPXCRM.&#xD;
         <sourceConnection xsi:type="archimate:Connection" id="id-fa810af964ec4b1e86ee2d5771ddb0cb" source="id-2890876ebbc94a9b9d244c4de57317cc" target="id-980293c8dd4b4d1184247752ca3c2016" archimateRelationship="id-43678f09dbe64a2682094f2df3c1907b"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-3ae083ec0e9b48c4afdd27408d8ad8e0" archimateElement="id-932f602b26994eab808bb534ca264649">
-        <bounds x="1656" y="990" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-581a629b9acb44a3b6d466889ece943b" targetConnections="id-66fe62dcb61f4e8eab63ac3168f28289" archimateElement="id-4fabe338f99e4a9885b7b8ff59e943c3">
-        <bounds x="816" y="1020" width="240" height="55"/>
-      </child>
-      <child xsi:type="archimate:Note" id="id-7432615ce497403fa3c1f5c8c935588c" textAlignment="1">
-        <bounds x="709" y="901" width="204" height="102"/>
-        <content>Estudar melhor isto... queria fazer do SPXCRM um assigned para o registo das propostas mas nao dá, estou a pensar mal. &#xD;
-Primeiro tinha feito que o java virtual machine servia o SPXCRM.&#xD;
-</content>
+        <bounds x="828" y="696" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-c2ee7419c8c24777b32f13981d4aba8d" archimateElement="id-bca5a96865bd488a9a1d3160b27913aa">
         <bounds x="2076" y="-72" width="120" height="55"/>
@@ -399,8 +416,8 @@ Primeiro tinha feito que o java virtual machine servia o SPXCRM.&#xD;
           <bendpoint startX="355" startY="21" endX="-20" endY="-212"/>
         </sourceConnection>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="id-e7475a05ebb24a8d8aab5cbf0839d60a" archimateElement="id-eceeae9180574b69880fb7a15cd236b0">
-        <bounds x="2052" width="120" height="55"/>
+      <child xsi:type="archimate:DiagramObject" id="id-e7475a05ebb24a8d8aab5cbf0839d60a" targetConnections="id-abdd134bb76d4800b1427992288dc07b" archimateElement="id-eceeae9180574b69880fb7a15cd236b0">
+        <bounds x="1872" y="492" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:Note" id="id-0052f7d70ecf418284bf7e654789758a" textAlignment="1">
         <bounds x="516" y="406" width="185" height="99"/>
@@ -416,7 +433,7 @@ CDep e Cliente no esclarecimento de questoes , bus colab?&#xD;
         </sourceConnection>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-0e062ef660674ecc8b49b32e170668c8" archimateElement="id-5186ebed12524c138a281064c240e68f">
-        <bounds x="2268" y="112" width="120" height="55"/>
+        <bounds x="2460" y="132" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-15ba365b4c094a688d008dc4d40fadb5" targetConnections="id-64e00c9b5d194ff1b5ce5c209f35ccba" archimateElement="id-6093ed4b27394bee8a94c0baa9a85e08">
         <bounds x="984" y="12" width="120" height="55"/>
@@ -424,8 +441,45 @@ CDep e Cliente no esclarecimento de questoes , bus colab?&#xD;
       <child xsi:type="archimate:DiagramObject" id="id-d68ba202318943828e5c6125830de4bb" targetConnections="id-9e33df70e6db4659a42d87832efb7e34" archimateElement="id-abaf006e738a4ae4b9dc18e585382bba">
         <bounds x="1152" y="12" width="120" height="55"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="id-3ee6d0fdc2d54a219be18936eb43b94b" archimateElement="id-14657fd6c3b84b3f8e82ad4796a045f1">
-        <bounds x="2028" y="228" width="120" height="55"/>
+      <child xsi:type="archimate:DiagramObject" id="id-3ee6d0fdc2d54a219be18936eb43b94b" targetConnections="id-0a3eb1b898f0457081040048a77a95cb" archimateElement="id-14657fd6c3b84b3f8e82ad4796a045f1">
+        <bounds x="2100" y="534" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-17333b1ab61941c4b10ab527e0f9fcb0" source="id-3ee6d0fdc2d54a219be18936eb43b94b" target="id-ec5965885aa94ba989541570397f3d61" archimateRelationship="id-dd3c272242814bad9c6363013476e3b0"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-55104af5a9b641538c324ad04669ebea" targetConnections="id-3653ddbedd9b436ab8cba674f0e6ccbf" archimateElement="id-9c120eb03dce4151b930b2e63d7f88b8">
+        <bounds x="1416" y="720" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-70dfc4ae9867442aa5b8a54cf245ac23" targetConnections="id-c2e53e397cdf4795a84463bddca26bc7" archimateElement="id-938a715a019b4f3b919f780e5a3c4c83">
+        <bounds x="1680" y="900" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:Note" id="id-4f5600f4c1df4c90b7f1722d06dfa66e" textAlignment="1">
+        <bounds x="552" y="804" width="372" height="191"/>
+        <content>É de esperar que neste “viewpoint” sejam representados pelo menos elementos&#xD;
+de “Product”, “Business Process” (com os respectivos “Business Actors” ou “Business Roles”), “Business&#xD;
+Service”, “Application Component” e “Technology Nodes&#xD;
+</content>
+      </child>
+      <child xsi:type="archimate:Note" id="id-0ff3a576f5954d088a221dbacea57852" textAlignment="1">
+        <bounds x="207" y="215" width="185" height="110"/>
+        <content>Quem analisa as  Questões?&#xD;
+Processos mais a frente... perguntar se tem de ter os business actors ou roles respetivos&#xD;
+</content>
+      </child>
+      <child xsi:type="archimate:Note" id="id-0cfdf808dc704a4bb8c58075ea62e59c" textAlignment="1">
+        <bounds x="1680" y="972" width="277" height="217"/>
+        <content>Representar? A oferta de valor da SPX consiste na intermediação e valorização 28&#xD;
+das comunicações entre os satélites e outros sistemas de origem 29&#xD;
+ou destino dessas comunicações, os quais podem ser sistemas de 30&#xD;
+controlo ou de consumo de dados do satélite. &#xD;
+</content>
+      </child>
+      <child xsi:type="archimate:Note" id="id-64a69d4ee4ea4639a015488269237325" textAlignment="1">
+        <bounds x="1488" y="444" width="193" height="133"/>
+        <content>Será q deviamos ligar rejeição do relatorio ao rejeitar pedido de contrato? Porque diz isto: Quando uma pretensão de um cliente é rejeitada, o CDep deve&#xD;
+informar disso o cliente e o processo termina (linha 71, diferente do q diz antes!)&#xD;
+</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ec5965885aa94ba989541570397f3d61" targetConnections="id-17333b1ab61941c4b10ab527e0f9fcb0" archimateElement="id-89dfdd1702994d3897084782b0cf6b4c">
+        <bounds x="2244" y="534" width="120" height="55"/>
       </child>
     </element>
   </folder>

@@ -109,15 +109,15 @@
         <bounds x="1152" y="288" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-cc9839a0b4564448b3e63748fefc88c6" targetConnections="id-1d981d117a374755881b52c7afbf97b4" archimateElement="id-efec24b8348a4357a5466638efc68547">
-        <bounds x="74" y="480" width="120" height="55"/>
+        <bounds x="74" y="480" width="120" height="37"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-24370ed182af4b01966620c4943d8283" source="id-cc9839a0b4564448b3e63748fefc88c6" target="id-ea7dd481954a4d15a198b29fac7eaa27" archimateRelationship="id-2c70bcaa8903430fb4d068dcc6d3d6f6"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-d259a697fb024a9b8d668fb2c9a3cf53" targetConnections="id-6eabba15a7fb4167979f8696f91164d1" archimateElement="id-91eb29e671c24d569064a0f8f3f9a128">
-        <bounds x="239" y="480" width="145" height="55"/>
+        <bounds x="239" y="480" width="145" height="37"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-fe833b88defd4b8eb4018ee07836b0dc" source="id-d259a697fb024a9b8d668fb2c9a3cf53" target="id-d2ec590f62d04f53a6b418b94b6ce04d" archimateRelationship="id-2637f79e4c664de0a1e809f7dc1e3653"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-4a22134210f84a1a929d0136403b6f59" targetConnections="id-67018072f9054de7966d65ec419d3b5c" archimateElement="id-c0693812ea0c49e0b12d13d82bff292e">
-        <bounds x="780" y="444" width="120" height="48"/>
+        <bounds x="780" y="444" width="120" height="37"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-2f41a1f3cba8494b9468b45c36cb44b2" source="id-4a22134210f84a1a929d0136403b6f59" target="id-193c9df3696f436088a58febbfab503c" archimateRelationship="id-fbc5fcf7ac3942558dfd23fdd9a2bf35"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-abf00736a5734e998c2b5b319320d063" targetConnections="id-d8251a12b8b44fdcbbd30200c7d94660" archimateElement="id-cd2d2cf15ec54107826d83ea6f779a06">

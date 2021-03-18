@@ -892,7 +892,7 @@ informar disso o cliente e o processo termina (linha 71, diferente do q diz ante
         <bounds x="970" y="636" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:Note" id="id-7df32408bedd43418d8a2b63c2735a25" textAlignment="1">
-        <bounds x="444" y="1152" width="240" height="138"/>
+        <bounds x="432" y="1152" width="252" height="144"/>
         <content>Ponto 5... muito confuso ainda, necessita reler e rever!!! Mas, sente-te à vontade para apagar ou adicionar coisas, eu possivelmente irei apagar muitas relações aqui...</content>
       </child>
       <child xsi:type="archimate:Note" id="id-152ed6dba0b64944aa0a216c0860f50c" textAlignment="1">
@@ -1009,7 +1009,7 @@ por serviços web, e informa os clientes por email. &#xD;
         <bounds x="-360" y="108" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-10d4a545c684428e828ef204cd0d7273" source="id-6f66af16df2144929ca32ffe04d359e3" target="id-dca9e4dfc4ad4476aef17e1cba232393" archimateRelationship="id-e7a93f96bba6402c9b1fc0e16a501bf5"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-95b3f1377ca6440dae9942e4d084c603" source="id-6f66af16df2144929ca32ffe04d359e3" target="id-eb8fbb2506544b168b29589016384548" archimateRelationship="id-20f6a31a01384f138765ba40bb486a2c">
-          <bendpoint startX="84" startY="58" endX="-468" endY="-80"/>
+          <bendpoint startX="132" startY="58" endX="-420" endY="-80"/>
           <bendpoint startX="468" startY="58" endX="-84" endY="-80"/>
         </sourceConnection>
       </child>

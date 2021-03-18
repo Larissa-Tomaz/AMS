@@ -120,6 +120,7 @@
     <element xsi:type="archimate:SystemSoftware" name="Android" id="id-236b9a1cbe974511b76e98bdce7d2551"/>
     <element xsi:type="archimate:SystemSoftware" name="IOS" id="id-005134b556e24781b01b7c680f28dd20"/>
     <element xsi:type="archimate:Node" name="SATNET" id="id-6559f4aefe8843d3b0490c3377bc0364"/>
+    <element xsi:type="archimate:TechnologyService" name="Serviços de Monitorização e Controlo" id="id-a3fe8156c3da408ea8a883077e2ee7f4"/>
   </folder>
   <folder name="Motivation" id="id-221c47b7960045b3a06c4ef797c806fd" type="motivation">
     <element xsi:type="archimate:Stakeholder" name="Stakeholder" id="id-182f8eeeb7384a4c9bf465a0430cd982"/>
@@ -267,6 +268,7 @@
     <element xsi:type="archimate:AccessRelationship" id="id-d2fbf2aa62fc4254964ee384b0e24279" source="id-58ada6cec1934bd398cbb1d7d72d1dee" target="id-56f8b456c7444a75ba26d75a47ae55eb"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-113be5ee4337434088f06db6a731c79f" source="id-335fba16bd7947669078ca49f2e944ff" target="id-47c205d8757e47a0bb357df997385e74"/>
     <element xsi:type="archimate:FlowRelationship" name="linha 155 do enunciado" id="id-2ae117420ed64e8ab00125068f145b35" source="id-099205e0de124d659db7225c24e2e7ca" target="id-6559f4aefe8843d3b0490c3377bc0364"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-432a0757bc0b4d509bbea2db539287fd" source="id-6559f4aefe8843d3b0490c3377bc0364" target="id-a3fe8156c3da408ea8a883077e2ee7f4"/>
   </folder>
   <folder name="Views" id="id-0157287966ae44b8a3c2f2234dc6dc24" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-8cf6101a9763400fb091ba2ecd0fe65a"/>
@@ -838,10 +840,33 @@ Service”, “Application Component” e “Technology Nodes&#xD;
       </child>
       <child xsi:type="archimate:Note" id="id-152ed6dba0b64944aa0a216c0860f50c" textAlignment="1">
         <bounds x="1524" y="792" width="185" height="80"/>
-        <content>Esse Data Object... fica ou baza?</content>
+        <content>Esse Data Object... fica ou sai?</content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-39842731608a4285bc777de2c007fed1" targetConnections="id-4c91a48fcf374594821f38f2da23d066" archimateElement="id-6559f4aefe8843d3b0490c3377bc0364">
         <bounds x="1140" y="1092" width="252" height="84"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-1b5a34ad2c2248ba8f4b9703d7059241" source="id-39842731608a4285bc777de2c007fed1" target="id-b36256d50c4b43b7941bb1bf0acdad0f" archimateRelationship="id-432a0757bc0b4d509bbea2db539287fd"/>
+      </child>
+      <child xsi:type="archimate:Note" id="id-1f9fad34d6b640cbb5d55067dc2f26a8" textAlignment="1">
+        <bounds x="852" y="1056" width="210" height="168"/>
+        <content>Será Necessário incluir:  aplicação SATIS recebe ou envia os pacotes para os satélites 183&#xD;
+através da rede SATNET, comunica com os sistemas dos clientes 184&#xD;
+por serviços web, e informa os clientes por email. &#xD;
+----&#xD;
+(Serviços web e email maybe Nodes?)&#xD;
+</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b36256d50c4b43b7941bb1bf0acdad0f" targetConnections="id-1b5a34ad2c2248ba8f4b9703d7059241" archimateElement="id-a3fe8156c3da408ea8a883077e2ee7f4">
+        <bounds x="1512" y="1106" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:Note" id="id-b576b038ee5e4eac8b2cdbc75be17c99" textAlignment="1">
+        <bounds x="1248" y="1188" width="277" height="120"/>
+        <content>Representar trocas de info entre SATNET e SATIS?&#xD;
+</content>
+      </child>
+      <child xsi:type="archimate:Note" id="id-7fe806fc7fdc4f5b8bc2d5122a0e9a38" textAlignment="1">
+        <bounds x="682" y="-155" width="122" height="66"/>
+        <content>TDEP: Faz intervenções (SATNET)&#xD;
+</content>
       </child>
     </element>
   </folder>

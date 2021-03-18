@@ -119,6 +119,7 @@
     <element xsi:type="archimate:Node" name="Servidor" id="id-542d6f9bc237444ca1252739e9a0199e"/>
     <element xsi:type="archimate:SystemSoftware" name="Android" id="id-236b9a1cbe974511b76e98bdce7d2551"/>
     <element xsi:type="archimate:SystemSoftware" name="IOS" id="id-005134b556e24781b01b7c680f28dd20"/>
+    <element xsi:type="archimate:Node" name="SATNET" id="id-6559f4aefe8843d3b0490c3377bc0364"/>
   </folder>
   <folder name="Motivation" id="id-221c47b7960045b3a06c4ef797c806fd" type="motivation">
     <element xsi:type="archimate:Stakeholder" name="Stakeholder" id="id-182f8eeeb7384a4c9bf465a0430cd982"/>
@@ -265,6 +266,7 @@
     <element xsi:type="archimate:AccessRelationship" id="id-2473753b276449ae90fea460e808c162" source="id-099205e0de124d659db7225c24e2e7ca" target="id-56f8b456c7444a75ba26d75a47ae55eb"/>
     <element xsi:type="archimate:AccessRelationship" id="id-d2fbf2aa62fc4254964ee384b0e24279" source="id-58ada6cec1934bd398cbb1d7d72d1dee" target="id-56f8b456c7444a75ba26d75a47ae55eb"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-113be5ee4337434088f06db6a731c79f" source="id-335fba16bd7947669078ca49f2e944ff" target="id-47c205d8757e47a0bb357df997385e74"/>
+    <element xsi:type="archimate:FlowRelationship" name="linha 155 do enunciado" id="id-2ae117420ed64e8ab00125068f145b35" source="id-099205e0de124d659db7225c24e2e7ca" target="id-6559f4aefe8843d3b0490c3377bc0364"/>
   </folder>
   <folder name="Views" id="id-0157287966ae44b8a3c2f2234dc6dc24" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-8cf6101a9763400fb091ba2ecd0fe65a"/>
@@ -686,7 +688,7 @@ Service”, “Application Component” e “Technology Nodes&#xD;
         <sourceConnection xsi:type="archimate:Connection" id="id-b5769d5e85b9456883b75da07a1e2c9d" source="id-5d1b4f57361246c29374228edd08e247" target="id-065172c5b4a04075b40c010f7ce524c0" archimateRelationship="id-9b1b837b5062439ba97fdd22c438e7d5"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-4e1f89baefb3479582f2abb09be5b24a" archimateElement="id-00fb6840056b4c97bda97016b06565d0">
-        <bounds x="1277" y="976" width="109" height="76"/>
+        <bounds x="1337" y="976" width="109" height="76"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-9979d00e80b147d5a63c098184ffb4f0" source="id-4e1f89baefb3479582f2abb09be5b24a" target="id-3ca3acac624646008a573a90c4a730bb" archimateRelationship="id-26e4dfab2eb044fb96af7f3a48b9866a"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-6a8515c1cd8b40deb5327943c66a945f" source="id-4e1f89baefb3479582f2abb09be5b24a" target="id-a47c0187a0f44ba08211ca39123284ae" archimateRelationship="id-90656a69744f494d91f059f8f75563af"/>
       </child>
@@ -697,9 +699,11 @@ Service”, “Application Component” e “Technology Nodes&#xD;
       <child xsi:type="archimate:DiagramObject" id="id-a47c0187a0f44ba08211ca39123284ae" targetConnections="id-e4f8841aab88473ea875d2e2cbf87109 id-6a8515c1cd8b40deb5327943c66a945f id-e7b1c341e59646edbd6cd99b95763d05 id-64b5e9d3a24746ccaf1aaac7516b99dd" archimateElement="id-099205e0de124d659db7225c24e2e7ca">
         <bounds x="1128" y="722" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-1fda30f050bf4bf5a11d9191001840bb" source="id-a47c0187a0f44ba08211ca39123284ae" target="id-31323bc73c5f4153a7c0ed4b34b78cfb" archimateRelationship="id-b992147ca17c4649b943e6bf4793939d"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-371911e7a5fb46a09d2a930d920e355e" source="id-a47c0187a0f44ba08211ca39123284ae" target="id-081d5468bd7d41eeb34277672e6f4dda" archimateRelationship="id-3df2a2f7133d4d02a70e4162bf21c420"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-0c6102530efc4cc59dafa00e67098eaf" source="id-a47c0187a0f44ba08211ca39123284ae" target="id-cff26c7d358d4fdaa8251bc2d1f061d6" archimateRelationship="id-017dae31a46547af92e75fa71a686aa4"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-d2381afcf06f43f7bcc1c0d9186734ea" source="id-a47c0187a0f44ba08211ca39123284ae" target="id-1a84bc8637b84a898ca5493e3f3141b8" archimateRelationship="id-2473753b276449ae90fea460e808c162"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-4c91a48fcf374594821f38f2da23d066" source="id-a47c0187a0f44ba08211ca39123284ae" target="id-39842731608a4285bc777de2c007fed1" archimateRelationship="id-2ae117420ed64e8ab00125068f145b35">
+          <bendpoint startX="60" startY="188" endX="-17" endY="-197"/>
+        </sourceConnection>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-3ca3acac624646008a573a90c4a730bb" targetConnections="id-9979d00e80b147d5a63c098184ffb4f0" archimateElement="id-91f0c90eae984d83a5dc49c02c2a7475">
         <bounds x="1524" y="714" width="120" height="55"/>
@@ -726,7 +730,6 @@ Service”, “Application Component” e “Technology Nodes&#xD;
         <sourceConnection xsi:type="archimate:Connection" id="id-445ce231be0549fabc56affb0f8390f7" source="id-31323bc73c5f4153a7c0ed4b34b78cfb" target="id-6518e181a72d4d5b87c2c81463810042" archimateRelationship="id-6536a21025ef48cf95a3e88a762b8112"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-907c292bc67b4aef945cbcc341628678" source="id-31323bc73c5f4153a7c0ed4b34b78cfb" target="id-50f10b4b7c4c431b86cda8fa0ea5acbc" archimateRelationship="id-23962264634f4122a6fc69c495ab1def"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-cd3b09ff639c496d8cd901921c2ef142" source="id-31323bc73c5f4153a7c0ed4b34b78cfb" target="id-45c1733d42394bb694ed81cf1782b0f8" archimateRelationship="id-acf289c1ae85467782f37ee959cf0119"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-82096143d23543a18b01aecfdc8fe101" source="id-31323bc73c5f4153a7c0ed4b34b78cfb" target="id-42a18824e02a423a9daed335c26df574" archimateRelationship="id-f511527ef7044281b4049b070a33fe26"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-f94552c4c3d5411f8b3aeb10750851ad" source="id-31323bc73c5f4153a7c0ed4b34b78cfb" target="id-384d45c5fcb9406686b850d1cd248ebb" archimateRelationship="id-8930f2f789d3486c9aa680385e5fe081"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-8c3f147099ae4705a55d2888ea9677af" source="id-31323bc73c5f4153a7c0ed4b34b78cfb" target="id-e3e9f9dfee9d436f96f1c1f0e1e93113" archimateRelationship="id-113be5ee4337434088f06db6a731c79f"/>
       </child>
@@ -759,9 +762,6 @@ Service”, “Application Component” e “Technology Nodes&#xD;
       <child xsi:type="archimate:DiagramObject" id="id-95d25b0ac1234a6aba815e06adc813a6" targetConnections="id-0a62179f983d43888f86d4662fb22704" archimateElement="id-3dbca2ab549b4dfca8e53b58d592a150">
         <bounds x="215" y="-132" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-b7739939325b46a0b7f986f9f1734dbd" source="id-95d25b0ac1234a6aba815e06adc813a6" target="id-acceffcf7d474db1ad60afaa95ea883c" archimateRelationship="id-ec803dead9b74c62ae8f4c892393bb12"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-081d5468bd7d41eeb34277672e6f4dda" targetConnections="id-371911e7a5fb46a09d2a930d920e355e" archimateElement="id-d5f28dd9261e434bb4bf954e5eab6479">
-        <bounds x="696" y="540" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-188055f2607944a7ab90f661f757b1ef" targetConnections="id-5b7936167acf43188d8768199b0a81c2" archimateElement="id-cc00e69f8e8e42a699b8cb250a5accd4">
         <bounds x="922" y="-144" width="120" height="55"/>
@@ -796,9 +796,6 @@ Service”, “Application Component” e “Technology Nodes&#xD;
           <bounds x="288" y="24" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-03e91210fa524c1a87e12646f0ed30d6" source="id-ca6efdd7fc9444ab92d00e87a9c77d56" target="id-d2b182b6a1ff4d5ea3a449bcd4e0d244" archimateRelationship="id-0f0a761b7030419c97a50867fe8bfd16"/>
         </child>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-42a18824e02a423a9daed335c26df574" targetConnections="id-82096143d23543a18b01aecfdc8fe101" archimateElement="id-754a12d60a8f43cc9289e65d1137ddba">
-        <bounds x="922" y="558" width="169" height="67"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-384d45c5fcb9406686b850d1cd248ebb" targetConnections="id-f94552c4c3d5411f8b3aeb10750851ad" archimateElement="id-814e702ca36b4a69b64af79d678f6ed1">
         <bounds x="1332" y="578" width="120" height="55"/>
@@ -838,6 +835,13 @@ Service”, “Application Component” e “Technology Nodes&#xD;
       <child xsi:type="archimate:Note" id="id-7df32408bedd43418d8a2b63c2735a25" textAlignment="1">
         <bounds x="456" y="876" width="240" height="138"/>
         <content>Ponto 5... muito confuso ainda, necessita reler e rever!!! Mas, sente-te à vontade para apagar ou adicionar coisas, eu possivelmente irei apagar muitas relações aqui...</content>
+      </child>
+      <child xsi:type="archimate:Note" id="id-152ed6dba0b64944aa0a216c0860f50c" textAlignment="1">
+        <bounds x="1524" y="792" width="185" height="80"/>
+        <content>Esse Data Object... fica ou baza?</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-39842731608a4285bc777de2c007fed1" targetConnections="id-4c91a48fcf374594821f38f2da23d066" archimateElement="id-6559f4aefe8843d3b0490c3377bc0364">
+        <bounds x="1140" y="1092" width="252" height="84"/>
       </child>
     </element>
   </folder>

@@ -1,0 +1,5 @@
+Distribuição de Tarefas:
+Joana e Larissa - Diagrama de contrato 
+Vicente e Diogo - Diagrama de intervenção
+
+Falta: Diagrama UML e Descrição estruturada em língua natural
